@@ -1,0 +1,4 @@
+baseURL = 'https://ProjectCGC.github.io/cgc'
+languageCode = 'en-us'
+title = 'Project CGC'
+theme = 'cgc'
