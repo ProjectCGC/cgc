@@ -33,6 +33,11 @@ footer {
   margin-top: 1rem;
 }
 
+main {
+  margin: 0 auto;
+  width: 60%;
+}
+
 a {
   color: var(--whites-light);
   text-decoration: none;
