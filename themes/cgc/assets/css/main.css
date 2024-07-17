@@ -146,3 +146,20 @@ nav ul li {
 .btn-secondary:hover {
   background: var(--green-light);
 }
+
+.box-card-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  list-style: none;
+  padding: 0;
+}
+
+.card-item {
+  border: 1px solid var(--blacks-light);
+  padding: 1rem 2rem;
+}
+
+.card-head {
+  border-bottom: 1px solid var(--blacks-light);
+}
