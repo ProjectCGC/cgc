@@ -50,16 +50,21 @@ header {
 .head-box-inner {
   position: relative;
   top: 250px;
-  background: var(--whites-dark);
+  background: var(--blacks-med);
   width: 60%;
   padding: 1rem;
   border: 1px solid var(--blacks-light);
-  border-radius: 5px;
+  color: var(--whites-med);
 }
 
 .head-box-inner h2 {
   margin: 0;
   padding: 0;
+}
+
+.head-box-inner p {
+  padding: 0 0 1rem;
+  margin: 1rem 0;
 }
 
 .big-title {
