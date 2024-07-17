@@ -109,6 +109,22 @@ nav ul li {
   padding: 0.5rem 1rem;
 }
 
+.btn:hover {
+  text-decoration: none;
+}
+
 .btn-primary {
   background: var(--reds-dark);
+}
+
+.btn-primary:hover {
+  background: var(--red-light);
+}
+
+.btn-secondary {
+  background: var(--greens-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--green-light);
 }
