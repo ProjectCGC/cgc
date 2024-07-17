@@ -18,7 +18,6 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: var(--blacks-dark);
   width: max-content;
   padding: 0.5rem;
 }
@@ -32,11 +31,38 @@ body {
   font-size: 1.2rem;
 }
 
+header {
+  font-family: Calibri, sans-serif;
+}
+
 .head-box {
   margin-top: -1rem;
   width: 100%;
   height: 500px;
   background: url('../img/fleshBeast.jpeg') no-repeat top center;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.head-box-inner {
+  position: relative;
+  top: 200px;
+  background: var(--whites-dark);
+  width: 60%;
+  padding: 1rem;
+}
+
+.head-box-inner h2 {
+  margin: 0;
+}
+
+.big-title {
+  color: var(--whites-light);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 footer {
@@ -75,4 +101,14 @@ nav ul {
 nav ul li {
   margin-right: 1rem;
   padding: 0.5rem;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+  background: var(--reds-dark);
 }
