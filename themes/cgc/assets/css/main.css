@@ -18,7 +18,7 @@
 
 body {
   color: #222;
-  font-family: sans-serif;
+  font-family: Cambria, sans-serif;
   line-height: 1.5;
   margin: 0;
 }
@@ -34,19 +34,19 @@ footer {
 }
 
 a {
-  color: #00e;
+  color: var(--whites-light);
   text-decoration: none;
 }
 
 nav {
   margin-bottom: 1rem;
-  background: var(--prime-bg);
+  background: var(--blacks-dark);
   width: 100%;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 2rem;
   padding: 0;
   display: flex;
   justify-content: left;
