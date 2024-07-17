@@ -31,7 +31,7 @@ footer {
   margin-top: 1rem;
 }
 
-main {
+main, footer {
   margin: 0 auto;
   width: 60%;
 }
