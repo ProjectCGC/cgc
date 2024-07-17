@@ -53,7 +53,7 @@ nav ul {
   margin: 0 0 0 2rem;
   padding: 0;
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 nav ul li {
