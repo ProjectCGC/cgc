@@ -1,9 +1,26 @@
+:root {
+  /* Main colors */
+  --blacks-dark: #050505;
+  --blacks-med: #2d262d;
+  --blacks-light: #544d55;
+  --whites-light: #f7f6fb;
+  --whites-med: #f1f1f1;
+  --whites-dark: #dfdfdf;
+
+  /* Secondary colors - Accents, Buttons, etc */
+  --reds-dark: #7b0a02;
+  --reds-med: #be1a11;
+  --red-light: #dc4740;
+  --greens-dark: #39bf2a;
+  --greens-med: #5bd350;
+  --green-light: #8bde84;
+}
+
 body {
   color: #222;
-  font-family: sans-serif;
+  font-family: Cambria, sans-serif;
   line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+  margin: 0;
 }
 
 header {
@@ -17,6 +34,29 @@ footer {
 }
 
 a {
-  color: #00e;
+  color: var(--whites-light);
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  margin-bottom: 1rem;
+  background: var(--blacks-dark);
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 0 0 2rem;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+}
+
+nav ul li {
+  margin-right: 1rem;
+  padding: 0.5rem;
 }
