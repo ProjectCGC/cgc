@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 nav {
   margin-bottom: 1rem;
   background: var(--blacks-dark);
