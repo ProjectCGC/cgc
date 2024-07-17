@@ -49,18 +49,20 @@ header {
 
 .head-box-inner {
   position: relative;
-  top: 200px;
+  top: 250px;
   background: var(--whites-dark);
   width: 60%;
   padding: 1rem;
+  border: 1px solid var(--blacks-light);
+  border-radius: 5px;
 }
 
 .head-box-inner h2 {
   margin: 0;
+  padding: 0;
 }
 
 .big-title {
-  color: var(--whites-light);
   font-weight: bold;
   font-size: 2rem;
 }
