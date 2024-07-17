@@ -18,7 +18,6 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: var(--blacks-dark);
   width: max-content;
   padding: 0.5rem;
 }
@@ -28,9 +27,44 @@ body {
   font-family: Cambria, sans-serif;
   line-height: 1.5;
   margin: 0;
+  background: var(--whites-dark);
+  font-size: 1.2rem;
 }
 
 header {
+  font-family: Calibri, sans-serif;
+}
+
+.head-box {
+  margin-top: -1rem;
+  width: 100%;
+  height: 500px;
+  background: url('../img/fleshBeast.jpeg') no-repeat top center;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.head-box-inner {
+  position: relative;
+  top: 250px;
+  background: var(--whites-dark);
+  width: 60%;
+  padding: 1rem;
+  border: 1px solid var(--blacks-light);
+  border-radius: 5px;
+}
+
+.head-box-inner h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.big-title {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 footer {
@@ -54,7 +88,6 @@ a:hover {
 }
 
 nav {
-  margin-bottom: 1rem;
   background: var(--blacks-dark);
   width: 100%;
 }
@@ -70,4 +103,30 @@ nav ul {
 nav ul li {
   margin-right: 1rem;
   padding: 0.5rem;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--reds-dark);
+}
+
+.btn-primary:hover {
+  background: var(--red-light);
+}
+
+.btn-secondary {
+  background: var(--greens-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--green-light);
 }
