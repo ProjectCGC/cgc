@@ -16,6 +16,13 @@
   --green-light: #8bde84;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: var(--blacks-dark);
+  width: max-content;
+  padding: 0.5rem;
+}
+
 body {
   color: var(--blacks-med);
   font-family: Cambria, sans-serif;
