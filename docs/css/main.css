@@ -156,10 +156,32 @@ nav ul li {
 }
 
 .card-item {
-  border: 1px solid var(--blacks-light);
+  border: 1px solid #b5b3bd;
   padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.card-item:hover {
+  border: 1px solid #8c8b94;
 }
 
 .card-head {
-  border-bottom: 1px solid var(--blacks-light);
+  border-left: 1px solid #b5b3bd;
+  width: 70%;
+  padding: 0 2rem;
+}
+
+.card-icon {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.material-symbols-outlined {
+  transform: scale(3);
 }
