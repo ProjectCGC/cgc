@@ -44,16 +44,22 @@ header {
 .container {
   width: 60%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
 }
 
 .head-box-inner {
-  position: relative;
-  top: 250px;
   background: var(--blacks-med);
   width: 60%;
-  padding: 1rem;
+  padding: 2rem;
   border: 1px solid var(--blacks-light);
   color: var(--whites-med);
+  border-radius: 10px;
+  position: absolute;
+  top: 13.5rem;
 }
 
 .head-box-inner h2 {
@@ -82,7 +88,7 @@ footer {
 
 main {
   font-family: Calibri, sans-serif;
-  margin: 0 auto;
+  margin: 3rem auto;
   width: 60%;
 }
 
@@ -156,10 +162,96 @@ nav ul li {
 }
 
 .card-item {
-  border: 1px solid var(--blacks-light);
+  border: 1px solid #b5b3bd;
   padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.card-item:hover {
+  border: 1px solid #8c8b94;
 }
 
 .card-head {
-  border-bottom: 1px solid var(--blacks-light);
+  border-left: 1px solid #b5b3bd;
+  width: 70%;
+  padding: 0 2rem;
+}
+
+.card-icon {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.blog-card-list {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  list-style: none;
+  padding: 0;
+}
+
+.blog-card-item {
+  border: 1px solid #b5b3bd;
+  border-radius: 10px;
+}
+
+.blog-card-list img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 10px 10px 0 0;
+}
+
+.blog-card-head {
+  border-bottom: 1px solid #b5b3bd;
+  margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+.blog-card-head h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-card-body {
+  padding: 0 2rem;
+}
+
+.blog-card-meta {
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  background: #cac6c6;
+  padding: 0 0.5rem;
+  color: #727070;
+}
+
+.blog-card-meta i {
+  margin-right: 0.25rem;
+  scale: 0.8;
+  vertical-align: middle;
+}
+
+.blog-card-meta span {
+  margin-right: 0.5rem;
+}
+
+.box-card-list .material-symbols-outlined {
+  transform: scale(3);
+}
+
+.home-blurb {
+  margin-bottom: 3rem;
+  border-left: 4px solid var(--reds-dark);
+  padding: 2rem;
+  background: var(--whites-light);
 }
