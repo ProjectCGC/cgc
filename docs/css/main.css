@@ -44,16 +44,22 @@ header {
 .container {
   width: 60%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
 }
 
 .head-box-inner {
-  position: relative;
-  top: 250px;
   background: var(--blacks-med);
   width: 60%;
-  padding: 1rem;
+  padding: 2rem;
   border: 1px solid var(--blacks-light);
   color: var(--whites-med);
+  border-radius: 10px;
+  position: absolute;
+  top: 13.5rem;
 }
 
 .head-box-inner h2 {
