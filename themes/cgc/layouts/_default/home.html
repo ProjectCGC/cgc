@@ -1,5 +1,7 @@
 {{ define "main" }}
-  {{ .Content }}
+  <div class="home-blurb">
+    {{ .Content }}
+  </div>
   {{/*  {{ range site.RegularPages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
@@ -27,6 +29,20 @@
       </div>
       <div class="card-head">
         <h4>Current Projects</h4>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="blog-card-list">
+    <li class="blog-card-item">
+      <img src="https://via.placeholder.com/250" alt="Blog Post Title" />
+      <div class="blog-card-head">
+        <h4>Blog Post Title</h4>
+      </div>
+      <div class="blog-card-body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh.
+        </p>
       </div>
     </li>
   </ul>
