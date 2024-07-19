@@ -54,14 +54,12 @@ header {
 }
 
 .head-box-inner {
-  background: var(--blacks-med);
   width: 60%;
   padding: 2rem;
-  border: 1px solid var(--blacks-light);
   color: var(--whites-med);
-  border-radius: 10px;
   position: absolute;
   top: 13.5rem;
+  text-shadow: 0px 2px 2px #363636;
 }
 
 .head-box-inner h2 {
