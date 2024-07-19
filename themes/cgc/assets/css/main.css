@@ -126,8 +126,8 @@ nav.menu .container {
 
 .logo {
   align-items: flex-start;
-  width: 50%;
   font-weight: 800;
+  margin-right: auto;
 }
 
 nav ul {
@@ -137,7 +137,6 @@ nav ul {
   display: flex;
   align-items: center;
   height: 100%;
-  width: 50%;
 }
 
 nav ul li {
