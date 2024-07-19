@@ -17,7 +17,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Atkinson Hyperlegible", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   width: max-content;
 }
 
@@ -31,14 +31,16 @@ body {
 }
 
 header {
-  font-family: Calibri, sans-serif;
+  font-family: "Atkinson Hyperlegible", Calibri, sans-serif;
 }
 
 .head-box {
   width: 100%;
   height: 500px;
   background-color: var(--green-light);
-  background: url('../img/fleshBeast.jpeg') no-repeat top -25px center; 
+  background: url('../img/fleshBeast.jpeg') top -25px center;;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -103,13 +105,26 @@ a:hover {
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--blacks-med);
   width: 100%;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  height: 100px;
+  box-shadow: 0 5px 10px 0 #646464;
+  border-bottom: 2px solid var(--greens-med);
+  z-index: 2001;
+  backdrop-filter: blur(10px);
 }
 
 nav a {
   color: var(--whites-light);
   font-weight: normal;
+}
+
+.logo {
+  align-self: flex-start;
 }
 
 nav ul {
