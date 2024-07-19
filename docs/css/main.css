@@ -89,7 +89,6 @@ footer {
 main {
   font-family: Calibri, sans-serif;
   margin: 3rem auto;
-  width: 60%;
 }
 
 a {
@@ -277,4 +276,29 @@ nav ul li {
   border-left: 4px solid var(--reds-dark);
   padding: 2rem;
   background: var(--whites-light);
+}
+
+.team {
+  height: 500px;
+  width: 100%;
+  background: var(--blacks-med);
+  color: var(--whites-light);
+}
+
+.team h1 {
+  margin: 0;
+}
+
+.team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
 }
