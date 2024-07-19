@@ -105,10 +105,7 @@ a:hover {
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--blacks-med);
+  background: var(--whites-light);
   width: 100%;
   font-family: "Atkinson Hyperlegible", sans-serif;
   height: 100px;
@@ -119,12 +116,20 @@ nav {
 }
 
 nav a {
-  color: var(--whites-light);
+  color: var(--blacks-light);
   font-weight: normal;
 }
 
+nav.menu .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .logo {
-  align-self: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  font-weight: 800;
 }
 
 nav ul {
@@ -132,7 +137,9 @@ nav ul {
   margin: 0 0 0 2rem;
   padding: 0;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
 }
 
 nav ul li {
@@ -150,6 +157,7 @@ nav ul li {
 
 .btn:hover {
   text-decoration: none;
+  background-color: var(--blacks-light);
 }
 
 .btn-primary {
