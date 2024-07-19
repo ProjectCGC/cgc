@@ -1,38 +1,36 @@
 {{ define "main" }}
+<div class="container">
   <div class="home-blurb">
     {{ .Content }}
   </div>
+</div>
   {{/*  {{ range site.RegularPages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
   {{ end }}  */}}
-   <ul class="box-card-list">
-    <li class="card-item">
-      <div class="card-icon">
-        <i class="material-symbols-outlined">group</i>
+  <section class="team">
+    <div class="container">
+      <h1>The Team</h1>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>John Doe</h3>
+          <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Jane Doe" />
+          <h3>Jane Doe</h3>
+          <p>Lead Designer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Smith" />
+          <h3>John Smith</h3>
+          <p>Lead Writer</p>
+        </div>
       </div>
-      <div class="card-head">
-        <h4>Meet the Team</h4>
-      </div>
-    </li>
-    <li class="card-item">
-      <div class="card-icon">
-        <i class="material-symbols-outlined">article</i>
-      </div>
-      <div class="card-head">
-        <h4>Dev Blog</h4>
-      </div>
-    </li>
-    <li class="card-item">
-      <div class="card-icon">
-        <i class="material-symbols-outlined">brush</i>
-      </div>
-      <div class="card-head">
-        <h4>Current Projects</h4>
-      </div>
-    </li>
-  </ul>
-
+    </div>
+  </section>
+  <div class="container">
   <ul class="blog-card-list">
     <li class="blog-card-item">
       <img src="https://via.placeholder.com/250" alt="Blog Post Title" />
@@ -81,4 +79,5 @@
     </li>
 
   </ul>
+  </div>
 {{ end }}
