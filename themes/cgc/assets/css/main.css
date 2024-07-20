@@ -99,7 +99,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
 }
 
 nav {
@@ -144,6 +143,11 @@ nav ul {
 nav ul li {
   margin-right: 1rem;
   padding: 0.5rem;
+  border-bottom: 2px solid #00000000;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid var(--blacks-med);
 }
 
 /* Buttons */
