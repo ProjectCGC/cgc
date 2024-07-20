@@ -230,6 +230,10 @@ nav ul li:hover {
   border-radius: 10px;
 }
 
+.blog-card-item:hover {
+  filter: brightness(1.02);
+}
+
 .blog-card-list img {
   width: 100%;
   height: 200px;
@@ -238,7 +242,6 @@ nav ul li:hover {
 }
 
 .blog-card-head {
-  border-bottom: 1px solid #b5b3bd;
   margin: 1rem;
   padding-bottom: 1rem;
 }
@@ -253,12 +256,8 @@ nav ul li:hover {
 }
 
 .blog-card-meta {
-  display: flex;
-  justify-content:left;
-  align-items: center;
   font-size: 1rem;
   margin-top: 0.5rem;
-  padding: 0 0.5rem;
   color: #727070;
 }
 
