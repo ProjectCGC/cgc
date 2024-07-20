@@ -279,14 +279,30 @@ nav ul li {
 }
 
 .team {
-  height: 500px;
   width: 100%;
   background: var(--blacks-med);
   color: var(--whites-light);
+  padding: 4rem 0;
+}
+
+.team img {
+  border-radius: 50%;
+  margin: 2rem;
+  width: 8rem;
 }
 
 .team h1 {
-  margin: 0;
+  margin-bottom: 4rem 0;
+}
+
+.team h3 {
+  margin: 0 auto;
+}
+
+.team p {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 0;
 }
 
 .team .container {
