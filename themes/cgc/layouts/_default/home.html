@@ -1,15 +1,13 @@
 {{ define "main" }}
-<div class="container">
-  <div class="home-blurb">
-    {{ .Content }}
-  </div>
-</div>
   {{/*  {{ range site.RegularPages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
   {{ end }}  */}}
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
+      <div class="home-blurb">
+        {{ .Content }}
+      </div>
       <h1>The Team</h1>
       <div class="team-members">
         <div class="team-member">

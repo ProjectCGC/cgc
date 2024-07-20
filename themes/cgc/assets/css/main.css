@@ -35,6 +35,7 @@ header {
 }
 
 .head-box {
+  margin-top: 6rem;
   width: 100%;
   height: 500px;
   background-color: var(--green-light);
@@ -88,7 +89,7 @@ footer {
 
 main {
   font-family: Calibri, sans-serif;
-  margin: 3rem auto;
+  margin: 0 auto;
 }
 
 a {
@@ -106,10 +107,12 @@ nav {
   width: 100%;
   font-family: "Atkinson Hyperlegible", sans-serif;
   height: 100px;
-  box-shadow: 0 5px 10px 0 #646464;
-  border-bottom: 2px solid var(--greens-med);
+  box-shadow: 0 5px 10px 0 #00000027;
+  border-bottom: 1px solid #a8a8a8;
   z-index: 2001;
   backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
 }
 
 nav a {
