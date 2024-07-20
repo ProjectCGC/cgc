@@ -280,6 +280,12 @@ nav ul li:hover {
   border-left: 4px solid var(--reds-dark);
   padding: 2rem;
   background: var(--whites-light);
+  color: var(--blacks-med);
+}
+
+div.home-blurb p {
+  text-align: left;
+  margin: 0;
 }
 
 .team {
