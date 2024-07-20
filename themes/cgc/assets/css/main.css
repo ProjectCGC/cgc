@@ -35,6 +35,7 @@ header {
 }
 
 .head-box {
+  margin-top: 6rem;
   width: 100%;
   height: 500px;
   background-color: var(--green-light);
@@ -88,7 +89,7 @@ footer {
 
 main {
   font-family: Calibri, sans-serif;
-  margin: 3rem auto;
+  margin: 0 auto;
 }
 
 a {
@@ -98,7 +99,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
 }
 
 nav {
@@ -106,10 +106,12 @@ nav {
   width: 100%;
   font-family: "Atkinson Hyperlegible", sans-serif;
   height: 100px;
-  box-shadow: 0 5px 10px 0 #646464;
-  border-bottom: 2px solid var(--greens-med);
+  box-shadow: 0 5px 10px 0 #00000027;
+  border-bottom: 1px solid #a8a8a8;
   z-index: 2001;
   backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
 }
 
 nav a {
@@ -141,6 +143,11 @@ nav ul {
 nav ul li {
   margin-right: 1rem;
   padding: 0.5rem;
+  border-bottom: 2px solid #00000000;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid var(--blacks-med);
 }
 
 /* Buttons */
@@ -220,19 +227,21 @@ nav ul li {
 }
 
 .blog-card-item {
-  border: 1px solid #b5b3bd;
   border-radius: 10px;
+}
+
+.blog-card-item:hover {
+  filter: brightness(1.02);
 }
 
 .blog-card-list img {
   width: 100%;
   height: 200px;
   object-fit: cover; 
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
 }
 
 .blog-card-head {
-  border-bottom: 1px solid #b5b3bd;
   margin: 1rem;
   padding-bottom: 1rem;
 }
@@ -247,13 +256,8 @@ nav ul li {
 }
 
 .blog-card-meta {
-  display: flex;
-  justify-content:left;
-  align-items: center;
   font-size: 1rem;
   margin-top: 0.5rem;
-  background: #cac6c6;
-  padding: 0 0.5rem;
   color: #727070;
 }
 
@@ -276,17 +280,39 @@ nav ul li {
   border-left: 4px solid var(--reds-dark);
   padding: 2rem;
   background: var(--whites-light);
+  color: var(--blacks-med);
+}
+
+div.home-blurb p {
+  text-align: left;
+  margin: 0;
 }
 
 .team {
-  height: 500px;
   width: 100%;
   background: var(--blacks-med);
   color: var(--whites-light);
+  padding: 4rem 0;
+}
+
+.team img {
+  border-radius: 50%;
+  margin: 2rem;
+  width: 8rem;
 }
 
 .team h1 {
-  margin: 0;
+  margin-bottom: 4rem 0;
+}
+
+.team h3 {
+  margin: 0 auto;
+}
+
+.team p {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 0;
 }
 
 .team .container {
