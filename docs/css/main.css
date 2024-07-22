@@ -297,7 +297,6 @@ nav ul li:last-of-type:hover {
   object-fit: cover; 
   border-radius: 20px;
   box-shadow: 0 5px 10px 0 #0000000c;
-
 }
 
 .blog-card-head {
@@ -320,7 +319,7 @@ nav ul li:last-of-type:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
+  
   img {
     box-shadow: none;
   }
