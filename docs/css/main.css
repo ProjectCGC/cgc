@@ -126,9 +126,16 @@ nav.menu .container {
 }
 
 .logo {
-  align-items: flex-start;
   font-weight: 800;
   margin-right: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo:hover {
+  background-color: #00000038;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
 }
 
 nav ul {
@@ -158,6 +165,10 @@ nav ul li:hover {
 
 nav ul li:last-of-type:hover {
   border-bottom: 2px solid var(--whites-light);
+
+  a:hover {
+    color: var(--whites-light);
+  }
 }
 
 
