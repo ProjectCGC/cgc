@@ -150,6 +150,11 @@ nav ul li:hover {
   border-bottom: 2px solid var(--blacks-med);
 }
 
+nav ul li:last-of-type:hover {
+  border-bottom: 2px solid var(--whites-light);
+}
+
+
 /* Buttons */
 
 .btn {
