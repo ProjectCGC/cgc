@@ -1,7 +1,151 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
+  {{/*  {{ range site.RegularPages }}
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
-  {{ end }}
+  {{ end }}  */}}
+  <div class="container">
+    <ul class="blog-card-list">
+      <li class="blog-card-item">
+        <a href='#'><img src="https://via.placeholder.com/250" alt="Blog Post Title" /></a>
+        <div class="blog-card-head">
+          <a href='#'><h4>Blog Post Title</h4></a>
+          <div class="blog-card-meta">
+            <span><img class="meta-profile-pic" src="https://via.placeholder.com/50" alt="John Doe" /> John Doe</span>
+            <span class="meta-date">July 28, 2024</span>
+          </div>
+        </div>
+      </li>
+      <li class="blog-card-item">
+        <a href='#'><img src="https://via.placeholder.com/250" alt="Blog Post Title" /></a>
+        <div class="blog-card-head">
+          <a href='#'><h4>Blog Post Title</h4></a>
+          <div class="blog-card-meta">
+            <span><img class="meta-profile-pic" src="https://via.placeholder.com/50" alt="John Doe" /> John Doe</span>
+            <span class="meta-date">July 28, 2024</span>
+          </div>
+        </div>
+      </li>
+      <li class="blog-card-item">
+        <a href='#'><img src="https://via.placeholder.com/250" alt="Blog Post Title" /></a>
+        <div class="blog-card-head">
+          <a href='#'><h4>Blog Post Title</h4></a>
+          <div class="blog-card-meta">
+            <span><img class="meta-profile-pic" src="https://via.placeholder.com/50" alt="John Doe" /> John Doe</span>
+            <span class="meta-date">July 28, 2024</span>
+          </div>
+        </div>
+      </li>
+  
+    </ul>
+    </div>
+    <section class="team" id="team">
+    <div class="container">
+      <div class="home-blurb">
+        {{ .Content }}
+      </div>
+      <h1>Game Design</h1>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>Nate</h3>
+          <p>Game Designer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Jane Doe" />
+          <h3>Phae Peterson</h3>
+          <p>Game Designer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Smith" />
+          <h3>Madi</h3>
+          <p>Game Designer
+        </div>
+        <div class="team-member">
+          <img src="{{ .Site.BaseURL }}img/profiles/elsF.jpg" alt="Els Fouché" />
+          <h3>Els Fouché</h3>
+          <p>Game Designer
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Smith" />
+          <h3>Nico</h3>
+          <p>Game Designer</p>
+        </div>
+      </div>
+      <h1>Production</h1>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>Arturo-Armendaris-Ibarria</h3>
+          <p>Executive Producer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="Jane Doe" />
+          <h3>Courtney Cochran</h3>
+          <p>Excutive Producer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Smith" />
+          <h3>Bryce Becerra</h3>
+          <p>Producer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Smith" />
+          <h3>Alice Portis</h3>
+          <p>Producer</p>
+        </div>
+      </div>
+      <h1>Level Design</h1>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>Leland LeVassar</h3>
+          <p>Level Designer</p>
+        </div>
+      </div>
+      <h1>Programming</h1>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>Abraham</h3>
+          <p>Programmer</p>
+        </div>
+        <div class="team-member">
+          <img src="{{ .Site.BaseURL }}img/profiles/ericG.jpg" alt="Eric Galvan" />
+          <h3>Eric Galvan</h3>
+          <p>Programmer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>Jordan</h3>
+          <p>Programmer</p>
+        </div>
+      </div>
+      <h1>Sound Design</h1>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>Riley McBroome</h3>
+          <p>Sound Designer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>Linus Johannesson</h3>
+          <p>Sound Designer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>Jess</h3> 
+          <p>Sound Designer</p>
+        </div>
+      </div>
+      <h1>2D Art</h1>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/150" alt="John Doe" />
+          <h3>Symon</h3>
+          <p>2D Art</p>
+        </div>
+      </div>
+    </div>
+  </section>
 {{ end }}

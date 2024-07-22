@@ -8,21 +8,20 @@ Renders a menu for the given menu ID.
 */}}
 
 <nav class="menu">
-  <ul class="menu__list">
-    <li class="menu__item">
-      <a href="{{ .page.Site.BaseURL }}" class="menu__link">Project CGC</a>
-    </li>
-   <li class="menu__item">
-      <a href="{{ .page.Site.BaseURL }}" class="menu__link">Dev Blog</a>
-    </li>
-    <li class="menu__item">
-      <a href="{{ .URL }}" class="menu__link">Projects</a>
-    </li>
-    <li class="menu__item">
-      <a href="{{ .URL }}" class="menu__link">About</a>
-    </li>
-    <li class="menu__item">
-      <a href="{{ .URL }}" class="menu__link">Join Us</a>
-    </li>
-  </ul>
+  <div class="container">
+    <a href="{{ .page.Site.BaseURL }}" class="menu__link logo">Project CGC</a>
+    <ul class="menu__list">
+     <li class="menu__item">
+        <a href="{{ .page.Site.BaseURL }}" class="menu__link">Dev Blog</a>
+      </li>
+      <li class="menu__item">
+        <a href="{{ .URL }}" class="menu__link">Projects</a>
+      </li>
+      <li class="menu__item">
+        <a href="#team" class="menu__link">About</a>
+      </li>
+      <li class="menu__item">
+        <a href="{{ .URL }}" class="menu__link btn btn-secondary">Join Us</a>
+      </li>
+    </div>
 </nav>

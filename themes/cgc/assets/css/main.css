@@ -16,36 +16,160 @@
   --green-light: #8bde84;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Atkinson Hyperlegible", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: max-content;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  color: #222;
-  font-family: Cambria, sans-serif;
+  color: var(--blacks-med);
+  font-family: "Atkinson Hyperlegible", sans-serif;
   line-height: 1.5;
   margin: 0;
+  background: var(--whites-dark);
+  font-size: 1.2rem;
 }
 
 header {
-  border-bottom: 1px solid #222;
-  margin-bottom: 1rem;
+  font-family: "Atkinson Hyperlegible", Calibri, sans-serif;
+}
+
+.head-box {
+  margin-top: 6rem;
+  width: 100%;
+  height: 500px;
+  background-color: var(--green-light);
+  background: url('../img/fleshBeast.jpeg') top -25px center;;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.head-box-inner {
+  width: 60%;
+  padding: 2rem;
+  color: var(--whites-med);
+  position: absolute;
+  top: 13.5rem;
+  text-shadow: 0px 2px 2px #363636;
+}
+
+.head-box-inner h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.head-box-inner p {
+  padding: 0 0 1rem;
+  margin: 1rem 0;
+}
+
+.big-title {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
+  color: var(--whites-med);
+  width: 100%;
+  height: min-content;
+  background: var(--blacks-med);
+  padding: 2rem 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-col h1 {
+  margin-bottom: 0;
+  padding: 0;
+  opacity: 0.5;
+}
+
+.footer-col p {
+  margin-top: 0.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-col a {
+  color: var(--whites-light);
+}
+
+.footer-col a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: border-bottom 0.5s ease;
+}
+
+
+main {
+  font-family: Calibri, sans-serif;
+  margin: 0 auto;
 }
 
 a {
-  color: var(--whites-light);
+  color: var(--blacks-med);
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
 }
 
 nav {
-  margin-bottom: 1rem;
-  background: var(--blacks-dark);
+  background: var(--whites-light);
   width: 100%;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  height: 100px;
+  box-shadow: 0 5px 10px 0 #00000027;
+  border-bottom: 1px solid #a8a8a8;
+  z-index: 2001;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+}
+
+nav a {
+  color: var(--blacks-light);
+  font-weight: normal;
+}
+
+nav.menu .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  margin-right: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.logo:hover {
+  background-color: #00000038;
+  border-radius: 10px;
+  transition: background-color 0.5s ease;
 }
 
 nav ul {
@@ -53,10 +177,234 @@ nav ul {
   margin: 0 0 0 2rem;
   padding: 0;
   display: flex;
-  justify-content: left;
+  align-items: center;
+  height: 100%;
 }
 
 nav ul li {
   margin-right: 1rem;
   padding: 0.5rem;
+  border-bottom: 2px solid #00000000;
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid var(--blacks-med);
+  transition: border-bottom 0.5s ease;
+
+  a:hover {
+    color: var(--blacks-dark);
+    transition: color 0.5s ease;
+  }
+}
+
+nav ul li:last-of-type:hover {
+  border-bottom: 2px solid var(--whites-light);
+
+  a:hover {
+    color: var(--whites-light);
+  }
+}
+
+
+/* Buttons */
+
+.btn {
+  padding: 0.5rem 1rem;
+  color: var(--whites-light);
+  font-weight: normal;
+}
+
+.btn:hover {
+  text-decoration: none;
+  background-color: var(--blacks-light);
+}
+
+.btn-primary {
+  background: var(--reds-dark);
+}
+
+.btn-primary:hover {
+  background: var(--red-light);
+}
+
+.btn-secondary {
+  background: var(--greens-dark);
+}
+
+.btn-secondary:hover {
+  background: var(--green-light);
+}
+
+.box-card-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  list-style: none;
+  padding: 0;
+}
+
+.card-item {
+  border: 1px solid #b5b3bd;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  color: #817e8d;
+}
+
+.card-item:hover {
+  border: 1px solid #8c8b94;
+  color: #42414d;
+  text-decoration: none;
+}
+
+.card-head {
+  border-left: 1px solid #b5b3bd;
+  width: 70%;
+  padding: 0 2rem;
+}
+
+.card-icon {
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.blog-card-list {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  list-style: none;
+  padding: 0;
+}
+
+.blog-card-item {
+  border-radius: 10px;
+}
+
+.blog-card-item:hover {
+  filter: brightness(1.02);
+}
+
+.blog-card-list img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.blog-card-head {
+  margin: 1rem;
+  padding-bottom: 1rem;
+}
+
+.blog-card-head h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.blog-card-body {
+  padding: 0 2rem;
+}
+
+.blog-card-meta {
+  margin-top: 0.5rem;
+  color: #727070;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blog-card-meta i {
+  margin-right: 0.25rem;
+  scale: 0.8;
+  vertical-align: middle;
+}
+
+.meta-date {
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+.blog-card-meta span {
+  margin-right: 0.5rem;
+
+  img {
+    margin-right: 0.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+
+}
+
+.box-card-list .material-symbols-outlined {
+  transform: scale(3);
+}
+
+.home-blurb {
+  margin-bottom: 3rem;
+  border-left: 4px solid var(--reds-dark);
+  padding: 2rem;
+  background: var(--whites-light);
+  color: var(--blacks-med);
+}
+
+div.home-blurb p {
+  text-align: left;
+  margin: 0;
+}
+
+.team {
+  width: 100%;
+  background: var(--blacks-med);
+  color: var(--whites-light);
+  padding: 4rem 0;
+}
+
+.team img {
+  border-radius: 50%;
+  margin: 2rem;
+  width: 8rem;
+  height: 8rem;
+
+}
+
+.team h1 {
+  margin-bottom: 4rem 0;
+}
+
+.team h3 {
+  margin: 0 auto;
+}
+
+.team p {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+
+.team .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
