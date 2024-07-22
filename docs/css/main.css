@@ -27,7 +27,7 @@ html {
 
 body {
   color: var(--blacks-med);
-  font-family: Cambria, sans-serif;
+  font-family: "Atkinson Hyperlegible", sans-serif;
   line-height: 1.5;
   margin: 0;
   background: var(--whites-dark);
@@ -84,12 +84,43 @@ header {
 
 footer {
   color: var(--whites-med);
-  margin-top: 1rem;
   width: 100%;
   height: min-content;
   background: var(--blacks-med);
   padding: 2rem 0;
 }
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-col h1 {
+  margin-bottom: 0;
+  padding: 0;
+  opacity: 0.5;
+}
+
+.footer-col p {
+  margin-top: 0.1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-col a {
+  color: var(--whites-light);
+}
+
+.footer-col a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: border-bottom 0.5s ease;
+}
+
 
 main {
   font-family: Calibri, sans-serif;
@@ -98,7 +129,6 @@ main {
 
 a {
   color: var(--blacks-med);
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -342,7 +372,7 @@ div.home-blurb p {
   margin: 2rem;
   width: 8rem;
   height: 8rem;
-  
+
 }
 
 .team h1 {
