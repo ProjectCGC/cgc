@@ -7,13 +7,12 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Jul 2024 09:00:00 -0700</lastBuildDate>
-    <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
     <atom:link href="https://ProjectCGC.github.io/cgc/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to Project CGC</title>
-      <link>http://localhost:1313/cgc/posts/intro/</link>
+      <link>https://ProjectCGC.github.io/cgc/posts/intro/</link>
       <pubDate>Fri, 26 Jul 2024 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/cgc/posts/intro/</guid>
+      <guid>https://ProjectCGC.github.io/cgc/posts/intro/</guid>
       <description>Who Are We? ProjectCGC is a student-run game development studio on CSU Chico’s campus. First created by Courtney Cochran and myself, Arturo Armendaris-Ibarria. ProjectCGC’s goal is to help students develop skills for their resumes by learning to work in teams in a more casual environment in a longer-term game development cycle. This has been the goal from the very start. Although it’s gone through some rewrites over time, the goal has always been the same.</description>
     </item>
     <item>
