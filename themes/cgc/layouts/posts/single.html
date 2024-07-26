@@ -14,9 +14,11 @@
   </header>
   <main>
     <div class="container">
-        <h1>{{ .Title }}</h1>
-        <p>{{ .Date.Format "January 2, 2006" }}</p>
-        {{ .Content }}
+        <div class="blog-post">
+            <h1>{{ .Title }}</h1>
+            <span class="post-meta">{{ .Params.author }} | {{ .Date.Format "January 2, 2006" }}</span>
+            {{ .Content }}
+            </div>
     </div>
   </main>
   <footer>
