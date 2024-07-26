@@ -54,7 +54,6 @@ header {
   display: flex;
   flex-direction: column;
   /* justify-content: flex-end; */
-  height: 100%;
   position: relative;
 }
 
@@ -158,6 +157,7 @@ nav.menu .container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 100%;
 }
 
 .logo {
@@ -416,7 +416,11 @@ div.home-blurb p {
 }
 
 .blog-header {
-  height: 400px;
+  height: 600px;
   background-color: #000;
-  background-image: url('{{ .Site.BaseURL }}')
+  overflow: hidden;
+}
+
+.blog-header img {
+  width: 100%;
 }
