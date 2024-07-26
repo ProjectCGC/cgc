@@ -1,5 +1,5 @@
 <ul class="blog-card-list">
-    {{ range (where .Site.RegularPages "Type" "in" "posts") }}
+    {{ range (where .Site.RegularPages "Type" "in" "posts" | first 3) }}
     <li class="blog-card-item">
         {{ if .Params.image }}
             <a href='{{ .Permalink }}'><img src=".Params.image" alt="{{ .Title }}" /></a>
