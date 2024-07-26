@@ -1,0 +1,44 @@
+<ul class="blog-card-list">
+    {{ range (where .Site.RegularPages "Type" "in" "posts" | first 3) }}
+    <li class="blog-card-item">
+        {{ if .Params.image }}
+            <a href='{{ .Permalink }}'><img src="{{ .Params.image }}" alt="{{ .Title }}" /></a>
+        {{ else }}
+            <a href='{{ .Permalink }}'><img src="https://via.placeholder.com/250" alt="{{ .Title }}" /></a>
+        {{ end }}
+        <div class="blog-card-head">
+            <a href='{{ .Permalink }}'><h4>{{ .Title }}</h4></a>
+            <div class="blog-card__content">
+                <div class="blog-card-meta">
+                    <span><img class="meta-profile-pic" src="https://via.placeholder.com/50" alt="{{ .Params.author }}" /> {{ .Params.author }}</span>
+                    <span class="meta-date">{{ .Date.Format "January 2, 2006" }}</span>
+                </div>
+            </div>
+        </div>
+    </li>
+    {{ end }}
+
+    {{/*  <li class="blog-card-item">
+      </li>
+      <li class="blog-card-item">
+        <a href='#'><img src="https://via.placeholder.com/250" alt="Blog Post Title" /></a>
+        <div class="blog-card-head">
+          <a href='#'><h4>Blog Post Title</h4></a>
+          <div class="blog-card-meta">
+            <span><img class="meta-profile-pic" src="https://via.placeholder.com/50" alt="John Doe" /> John Doe</span>
+            <span class="meta-date">July 28, 2024</span>
+          </div>
+        </div>
+      </li>
+      <li class="blog-card-item">
+        <a href='#'><img src="https://via.placeholder.com/250" alt="Blog Post Title" /></a>
+        <div class="blog-card-head">
+          <a href='#'><h4>Blog Post Title</h4></a>
+          <div class="blog-card-meta">
+            <span><img class="meta-profile-pic" src="https://via.placeholder.com/50" alt="John Doe" /> John Doe</span>
+            <span class="meta-date">July 28, 2024</span>
+          </div>
+        </div>
+      </li>
+    */}}
+</ul>

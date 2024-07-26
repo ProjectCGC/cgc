@@ -1,0 +1,28 @@
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  <header>
+    <div class="blog-header">
+        {{ range .Resources.ByType "image" }}
+            {{ $croppedBanner := .Fill "1400x600 Center webp" }}
+            <img src="{{ $croppedBanner.Permalink }}" alt="{{ .Title }}"  />
+        {{ end }}
+    </div>
+  </header>
+  <main>
+    <div class="container">
+        <div class="blog-post">
+            <h1>{{ .Title }}</h1>
+            <span class="post-meta">{{ .Params.author }} | {{ .Date.Format "January 2, 2006" }}</span>
+            {{ .Content }}
+            </div>
+    </div>
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>
