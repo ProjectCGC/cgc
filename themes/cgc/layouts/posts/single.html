@@ -1,0 +1,23 @@
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  <header>
+    <div class="blog-header">
+        <h1>{{ .Site.Title }}</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Date.Format "January 2, 2006" }}</p>
+        {{ .Content }}
+    </div>
+  </main>
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+</body>
+</html>
