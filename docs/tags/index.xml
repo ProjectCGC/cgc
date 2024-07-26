@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Project CGC</title>
-    <link>https://ProjectCGC.github.io/cgc/tags/</link>
+    <link>http://localhost:1313/cgc/tags/</link>
     <description>Recent content in Tags on Project CGC</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Mar 2023 11:00:00 -0700</lastBuildDate>
-    <atom:link href="https://ProjectCGC.github.io/cgc/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/cgc/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blue</title>
-      <link>https://ProjectCGC.github.io/cgc/tags/blue/</link>
+      <link>http://localhost:1313/cgc/tags/blue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ProjectCGC.github.io/cgc/tags/blue/</guid>
+      <guid>http://localhost:1313/cgc/tags/blue/</guid>
       <description></description>
     </item>
     <item>
       <title>Green</title>
-      <link>https://ProjectCGC.github.io/cgc/tags/green/</link>
+      <link>http://localhost:1313/cgc/tags/green/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ProjectCGC.github.io/cgc/tags/green/</guid>
+      <guid>http://localhost:1313/cgc/tags/green/</guid>
       <description></description>
     </item>
     <item>
       <title>Red</title>
-      <link>https://ProjectCGC.github.io/cgc/tags/red/</link>
+      <link>http://localhost:1313/cgc/tags/red/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ProjectCGC.github.io/cgc/tags/red/</guid>
+      <guid>http://localhost:1313/cgc/tags/red/</guid>
       <description></description>
     </item>
   </channel>
