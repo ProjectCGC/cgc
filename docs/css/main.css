@@ -319,7 +319,7 @@ nav ul li:last-of-type:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
+
   img {
     box-shadow: none;
   }
