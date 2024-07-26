@@ -6,7 +6,10 @@
   {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
   <header>
     <div class="blog-header">
-        <img src="{{ .Site.BaseURL }}img/intro-banner.jpg" alt="CGC Logo" />
+        {{ range .Resources.ByType "image" }}
+            {{ $croppedBanner := .Fill "1400x600 Center webp" }}
+            <img src="{{ $croppedBanner.Permalink }}" alt="{{ .Title }}"  />
+        {{ end }}
     </div>
   </header>
   <main>
