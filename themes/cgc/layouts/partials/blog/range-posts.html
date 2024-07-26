@@ -2,7 +2,7 @@
     {{ range (where .Site.RegularPages "Type" "in" "posts" | first 3) }}
     <li class="blog-card-item">
         {{ if .Params.image }}
-            <a href='{{ .Permalink }}'><img src=".Params.image" alt="{{ .Title }}" /></a>
+            <a href='{{ .Permalink }}'><img src="{{ .Params.image }}" alt="{{ .Title }}" /></a>
         {{ else }}
             <a href='{{ .Permalink }}'><img src="https://via.placeholder.com/250" alt="{{ .Title }}" /></a>
         {{ end }}

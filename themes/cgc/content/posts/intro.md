@@ -1,8 +1,8 @@
 ---
-author: "Arturo"
+author: "Arturo Armendaris-Ibarria"
 date: 2024-07-26T09:00:00-07:00
 title: "Welcome to Project CGC"
-image:
+image: "./img/intro-banner.jpg"
 ---
 
 ## Who Are We?

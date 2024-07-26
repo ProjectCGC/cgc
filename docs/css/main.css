@@ -418,4 +418,5 @@ div.home-blurb p {
 .blog-header {
   height: 400px;
   background-color: #000;
+  background-image: url('{{ .Site.BaseURL }}')
 }
