@@ -47,6 +47,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 4px solid var(--whites-med);
+
 }
 
 .container {
@@ -66,6 +67,7 @@ header {
   top: 13.5rem;
   text-shadow: 0px 2px 2px #363636;
 }
+
 
 .head-box-inner h2 {
   margin: 0;
