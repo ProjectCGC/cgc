@@ -428,3 +428,19 @@ div.home-blurb p {
 .blog-post {
   padding: 2rem;
 }
+
+/* Current Game Section */
+
+.curr-game {
+  height: auto;
+  background: #050505;
+  border-top: 5px solid var(--whites-med);
+  border-bottom: 5px solid var(--whites-med);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.game-logo {
+  width: 200px;
+  margin: 0 auto;
+}
