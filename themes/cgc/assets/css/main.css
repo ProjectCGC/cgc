@@ -438,9 +438,28 @@ div.home-blurb p {
   border-bottom: 5px solid var(--whites-med);
   padding-top: 4rem;
   padding-bottom: 4rem;
+  color: var(--whites-light);
 }
 
 .game-logo {
   width: 200px;
   margin: 0 auto;
+}
+
+.curr-game .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.game-info {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.game-desc {
+  padding-left: 2rem;
 }
