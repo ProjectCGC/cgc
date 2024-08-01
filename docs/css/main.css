@@ -460,6 +460,20 @@ div.home-blurb p {
   justify-content: flex-start;
 }
 
+.game-info img {
+  width: 200px;
+  height: 200px;
+  margin-right: 2rem;
+  border-radius: 20px;
+}
+
 .game-desc {
-  padding-left: 2rem;
+  padding-left: 6rem;
+}
+
+.g-alt {
+  .game-desc {
+    padding-left: 0;
+    padding-right: 6rem;
+  }
 }
