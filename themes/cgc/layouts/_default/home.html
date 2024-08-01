@@ -117,10 +117,17 @@
     </div>
   </section>
   <section class="curr-game">
+    {{ $conceptPic := resources.GetMatch "img/concept.jpeg" }}
+    {{ $conceptPic := $conceptPic.Fill "400x250 Center webp" }}
+    {{ $loopPic := resources.GetMatch "img/loop.png" }}
+    {{ $loopPic := $loopPic.Fill "400x250 Center webp" }}
+    {{ $charPic := resources.GetMatch "img/characters.jpeg" }}
+    {{ $charPic := $charPic.Fill "400x250 Center webp" }}
+
     <div class="container">
       <img class="game-logo" src="{{ .Site.BaseURL }}img/hyp-bio-logo.png" alt="Current Game Logo" />
       <div class="game-info">
-        <img src="https://via.placeholder.com/150" alt="Current Game" />
+        <img src="{{ $conceptPic.Permalink }}" alt="{{ .Title }}"  />
         <div class="game-desc">
           <h2>Concept</h2>
           <ul class="game-features">
@@ -138,10 +145,10 @@
             <li>Unlock shortcuts & return to resupply</li>
           </ul>
         </div>
-        <img src="https://via.placeholder.com/150" alt="Current Game" />
+        <img src="{{ $loopPic.Permalink }}" alt="{{ .Title }}"  />
       </div>
       <div class="game-info">
-        <img src="https://via.placeholder.com/150" alt="Current Game" />
+        <img src="{{ $charPic.Permalink }}" alt="{{ .Title }}"  />
         <div class="game-desc">
           <h2>Characters</h2>
           <ul class="game-features">
