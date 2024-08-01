@@ -46,6 +46,8 @@ header {
   background: url('../img/fleshBeast.jpeg') top -25px center;;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 4px solid var(--whites-med);
+
 }
 
 .container {
@@ -276,7 +278,8 @@ nav ul li:last-of-type:hover {
 }
 
 .blog-card-list {
-  margin-top: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
@@ -372,6 +375,7 @@ div.home-blurb p {
   background: var(--blacks-med);
   color: var(--whites-light);
   padding: 4rem 0;
+  border-top: 4px solid var(--whites-med);
 }
 
 .team img {
@@ -428,4 +432,51 @@ div.home-blurb p {
 
 .blog-post {
   padding: 2rem;
+}
+
+/* Current Game Section */
+
+.curr-game {
+  height: auto;
+  background: #050505;
+  border-top: 5px solid var(--whites-med);
+  border-bottom: 5px solid var(--whites-med);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: var(--whites-light);
+}
+
+.game-logo {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.curr-game .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.game-info {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.game-info img {
+  margin-right: 2rem;
+  border-radius: 20px;
+}
+
+.game-desc {
+  padding-left: 6rem;
+}
+
+.g-alt {
+  .game-desc {
+    padding-left: 0;
+    padding-right: 6rem;
+  }
 }
