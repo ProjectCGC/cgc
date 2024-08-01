@@ -46,6 +46,7 @@ header {
   background: url('../img/fleshBeast.jpeg') top -25px center;;
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 4px solid var(--whites-med);
 }
 
 .container {
@@ -275,7 +276,8 @@ nav ul li:last-of-type:hover {
 }
 
 .blog-card-list {
-  margin-top: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
@@ -371,6 +373,7 @@ div.home-blurb p {
   background: var(--blacks-med);
   color: var(--whites-light);
   padding: 4rem 0;
+  border-top: 4px solid var(--whites-med);
 }
 
 .team img {
